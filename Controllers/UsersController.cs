@@ -13,6 +13,11 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+        public IActionResult Create()
+        {
+            return View("CreateFormByHTMLHelpers");
+        }
+
         [HttpGet]
         public IActionResult ShowUser(User users)
         {
