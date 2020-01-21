@@ -2,6 +2,9 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "HelperMethods.HTMLHelper/1.0.1": {
+        "type": "package"
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4724,6 +4727,18 @@
     }
   },
   "libraries": {
+    "HelperMethods.HTMLHelper/1.0.1": {
+      "sha512": "78PPs1VMbHEwbMBP7eNkMeKdgEUg1bJGxZtW41whuvlIgT39uGUKxYLiKZxPC/RiK8ab/mkdduNgT8G5Mj9mLw==",
+      "type": "package",
+      "path": "helpermethods.htmlhelper/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Bootstrap Html Helpers/HelperMethods.cs",
+        "helpermethods.htmlhelper.1.0.1.nupkg.sha512",
+        "helpermethods.htmlhelper.nuspec"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -12980,6 +12995,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "HelperMethods.HTMLHelper >= 1.0.1",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
@@ -13027,6 +13043,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "HelperMethods.HTMLHelper": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",

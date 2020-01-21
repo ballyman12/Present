@@ -42,7 +42,6 @@ D:\Present\Present\bin\Debug\netcoreapp2.2\WebApplication1.dll
 D:\Present\Present\bin\Debug\netcoreapp2.2\WebApplication1.pdb
 D:\Present\Present\bin\Debug\netcoreapp2.2\WebApplication1.Views.dll
 D:\Present\Present\bin\Debug\netcoreapp2.2\WebApplication1.Views.pdb
-D:\Present\Present\obj\Debug\netcoreapp2.2\WebApplication1.csprojAssemblyReference.cache
 D:\Present\Present\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cache
 D:\Present\Present\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cs
 D:\Present\Present\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfoInputs.cache
@@ -66,3 +65,5 @@ D:\Present\Present\obj\Debug\netcoreapp2.2\WebApplication1.Views.pdb
 D:\Present\Present\obj\Debug\netcoreapp2.2\WebApplication1.dll
 D:\Present\Present\obj\Debug\netcoreapp2.2\WebApplication1.pdb
 D:\Present\Present\obj\Debug\netcoreapp2.2\WebApplication1.csproj.CopyComplete
+D:\Present\Present\obj\Debug\netcoreapp2.2\Razor\Views\Users\CreateFormByHTMLHelpers.cshtml.g.cs
+D:\Present\Present\obj\Debug\netcoreapp2.2\WebApplication1.csprojAssemblyReference.cache

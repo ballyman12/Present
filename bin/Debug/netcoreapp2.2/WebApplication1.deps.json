@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.2": {
       "WebApplication1/1.0.0": {
         "dependencies": {
+          "HelperMethods.HTMLHelper": "1.0.1",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
@@ -36,6 +37,7 @@
           "WebApplication1.dll": {}
         }
       },
+      "HelperMethods.HTMLHelper/1.0.1": {},
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "2.8.0",
@@ -3543,6 +3545,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "HelperMethods.HTMLHelper/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-78PPs1VMbHEwbMBP7eNkMeKdgEUg1bJGxZtW41whuvlIgT39uGUKxYLiKZxPC/RiK8ab/mkdduNgT8G5Mj9mLw==",
+      "path": "helpermethods.htmlhelper/1.0.1",
+      "hashPath": "helpermethods.htmlhelper.1.0.1.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",

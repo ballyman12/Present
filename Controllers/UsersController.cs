@@ -28,7 +28,7 @@ namespace WebApplication1.Controllers
 
                 ViewData["Name"] = users.Name;
                 ViewData["Address"] = users.Address;
-                ViewData["City"] = users.City;
+                ViewData["Phone"] = users.Phone;
                 ViewData["Province"] = users.Province;
                 ViewData["Country"] = users.Country;
                 ViewData["Zipcode"] = users.Zipcode;

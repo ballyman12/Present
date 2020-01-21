@@ -2,41 +2,53 @@
 @{
     ViewData["Title"] = "ShowUser";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    @using WebApplication1.Models.Users
+
+    var email = ViewData["Email"].ToString();
+
 }
+@using WebApplication1.Models.Users
+@using WebApplication1.Helpers
+
+@model User
 
     <div class="container">
         <h2>User detail</h2>
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Full name :</label>
-                <label class="control-label col-sm-10" for="email">@ViewData["Name"]</label>
+        
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name, new { @class = "control-label col-sm-2" })
+            <label class="control-label col-sm-10" for="email"> @ViewData["Name"]</label>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Address, new { @class = "control-label col-sm-2" })
+            <label class="control-label col-sm-5" for="email">@ViewData["Address"]</label>
+
+            @Html.LabelFor(m => m.Phone, new { @class = "control-label col-sm-1" })
+            <label class="control-label col-sm-4" for="email">@ViewData["Phone"]</label>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Province, new { @class = "control-label col-sm-2" })
+            <label class="control-label col-sm-3" for="email">@ViewData["Province"]</label>
+
+            @Html.LabelFor(m => m.Country, new { @class = "control-label col-sm-1" })
+            <label class="control-label col-sm-3" for="email">@ViewData["Country"]</label>
+
+            @Html.LabelFor(m => m.Zipcode, new { @class = "control-label col-sm-1" })
+            <label class="control-label col-sm-2" for="email">@ViewData["Zipcode"]</label>
+        </div>
+        <div class="form-group">
+
+            @Html.LabelFor(m => m.Email, new { @class = "control-label col-sm-2" })
+
+            @*<label class="control-label col-sm-10" for="email">@ViewData["Email"]</label>*@
+            <a href="mailto:@Html.Raw(!string.IsNullOrEmpty(email) ? Helper.ConvertUrl(email) : "")" class="control-label col-sm-5">@email</a>
+
+            @Html.LabelFor(m => m.Gender, new { @class = "control-label col-sm-1" })
+            <label class="control-label col-sm-4" for="email">@ViewData["Gender"]</label>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                @Html.ActionLink("Back", "Index", "Home", "" ,new { @Type="button", @class ="btn btn-success"})
             </div>
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Address :</label>
-                <label class="control-label col-sm-5" for="email">@ViewData["Address"]</label>
-                <label class="control-label col-sm-1" for="email">City :</label>
-                <label class="control-label col-sm-4" for="email">@ViewData["City"]</label>
-            </div>
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Province :</label>
-                <label class="control-label col-sm-3" for="email">@ViewData["Province"]</label>
-                <label class="control-label col-sm-1" for="email">Country :</label>
-                <label class="control-label col-sm-3" for="email">@ViewData["Country"]</label>
-                <label class="control-label col-sm-1" for="email">Zipcode :</label>
-                <label class="control-label col-sm-2" for="email">@ViewData["Zipcode"]</label>
-            </div>
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="pwd">Email :</label>
-                <label class="control-label col-sm-10" for="email">@ViewData["Email"]</label>
-            </div>
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="pwd">Gender :</label>
-                <label class="control-label col-sm-10" for="email">@ViewData["Gender"]</label>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                    <a type="button" href="/Users" class="btn btn-success">Back</a>
-                </div>
-            </div>
+        </div>
     </div>
 
